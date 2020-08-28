@@ -18,6 +18,10 @@ public class Server {
                 System.out.println(input);
                 if (input.isEmpty()){
                     System.out.println("Request received");
+                    out.println("HTTP/1.1 200 OK");
+                    out.println();
+                    out.flush();
+                    //dataOut.write();
                     break;
                 }
             }
