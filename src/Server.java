@@ -24,10 +24,10 @@ public class Server {
                     responseHeaders.println();
                     responseHeaders.flush();
 
-                    responseStream.writeUTF("<h1>En webserver</h1><br>");
-                    responseStream.writeUTF("<h2>En overskrift</h2>");
-                    responseStream.writeUTF("<p>Et afsnit.</p>");
-                    responseStream.writeUTF("<img src=\"https://i.imgur.com/40lws61.jpg\">");
+                    responseStream.writeBytes("<h1>En webserver</h1><br>");
+                    responseStream.writeBytes("<h2>En overskrift</h2>");
+                    responseStream.writeBytes("<p>Et afsnit.</p>");
+                    responseStream.writeBytes("<img src=\"https://i.imgur.com/40lws61.jpg\">");
                     responseStream.flush();
 
                     responseHeaders.close();
